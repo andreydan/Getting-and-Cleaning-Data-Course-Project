@@ -13,6 +13,6 @@ For the purpose of the task the script will download the ZIP archive which inclu
 
 As the result tidy data that can be used for later analysis will be prepared.
 
-####Dependencies
+####Dependency
 
 run_analysis.R file helps to install the dependency automatically (data.table R package).
