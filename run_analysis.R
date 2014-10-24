@@ -6,7 +6,8 @@ library(data.table)
 
 ## Before making the analysis the files need to be loaded, unzipped and be ready for reading.
 getUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(getUrl, destfile = "Dataset.zip", method = "curl")
+download.file(getUrl, destfile = "Dataset.zip", method = "curl") ## For running on Windows machines the method parameter
+##  should be skipped. So the command looks like: download.file(getUrl, destfile = "Dataset.zip")
 unzip("Dataset.zip")
 Xtest <- read.table("./UCI HAR Dataset/test/X_test.txt",header=F)
 Ytest <- read.table("./UCI HAR Dataset/test/y_test.txt",header=F)
